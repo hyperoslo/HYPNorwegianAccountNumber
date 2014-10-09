@@ -1,5 +1,3 @@
 language: objective-c
-before_install:
-    - brew update
-    - brew install xctool
-script: xctool -project HYPNorwegianAccountNumber.xcodeproj -scheme HYPAccountNumberTests test
+xcode_project: HYPNorwegianAccountNumber.xcodeproj
+xcode_scheme: HYPAccountNumberTests
