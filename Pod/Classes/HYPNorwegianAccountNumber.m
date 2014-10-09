@@ -31,6 +31,13 @@
     return self;
 }
 
+- (BOOL)isValid
+{
+    BOOL valid = NO;
+
+    return valid;
+}
+
 - (NSString *)controlNumberString
 {
     if (self.accountNumber.length != 11) return nil;
