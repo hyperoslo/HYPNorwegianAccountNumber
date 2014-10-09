@@ -25,7 +25,7 @@
 
 - (instancetype)initWithString:(NSString *)string
 {
-	self = [super init];
+    self = [super init];
     if (!self) return nil;
 
     self.accountNumber = string;
@@ -49,7 +49,7 @@
 {
     if (self.accountNumber.length != 11) return nil;
 
-	NSString *substring = [self.accountNumber substringFromIndex:10];
+    NSString *substring = [self.accountNumber substringFromIndex:10];
 
     return substring;
 }
@@ -60,7 +60,7 @@
 
     if (!controlNumberString) return 0;
 
-	return [self.controlNumberString intValue];
+    return [self.controlNumberString intValue];
 }
 
 #pragma mark - Private methods
@@ -79,7 +79,7 @@
 
 - (NSString *)accountNumberWithoutControlNumber
 {
-	if (self.accountNumber.length != 11) return nil;
+    if (self.accountNumber.length != 11) return nil;
 
     NSString *substring = [self.accountNumber substringToIndex:10];
 
