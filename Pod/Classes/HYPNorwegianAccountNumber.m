@@ -35,15 +35,14 @@
 
 - (BOOL)isValid
 {
-    BOOL valid = NO;
+    if (self.accountNumber.length != 11) return NO;
+
     if ([self skipValidation]) return YES;
 
     NSUInteger calculateControlNumber = [self calculate:self.accountNumberWithoutControlNumber withWeightNumbers:[HYPNorwegianAccountNumber weightNumbers]];
     calculateControlNumber = 11 - (calculateControlNumber % 11);
 
-    valid = (calculateControlNumber == self.controlNumber);
-
-    return valid;
+    return (calculateControlNumber == self.controlNumber);
 }
 
 - (NSString *)controlNumberString
