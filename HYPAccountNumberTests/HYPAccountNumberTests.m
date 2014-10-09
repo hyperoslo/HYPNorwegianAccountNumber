@@ -38,7 +38,8 @@ static NSString * HYPAccountNumberSubject = @"11111111111";
 
 - (void)testFalseAuthenticity
 {
-    XCTAssert(!self.accountNumber.isValid, @"Account number is not valid");
+    BOOL isValid = [HYPNorwegianAccountNumber validateWithString:@"11111111111"];
+    XCTAssert(!isValid, @"Account number is not valid");
 }
 
 @end
