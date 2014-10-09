@@ -30,7 +30,10 @@ static NSString * HYPAccountNumberSubject = @"11111111111";
 }
 
 - (void)testControlNumber {
-    XCTAssert(self.accountNumber.controlNumber == 1, @"Control number is one");
+	NSString *lastCharacter = [HYPAccountNumberSubject substringWithRange:NSMakeRange(HYPAccountNumberSubject.length-1, 1)];
+    NSUInteger control = (unsigned)[lastCharacter integerValue];
+
+    XCTAssert(self.accountNumber.controlNumber == control, @"Found control number");
 }
 
 - (void)testAuthenticity
