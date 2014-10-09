@@ -2,6 +2,8 @@
 //  HYPNorwegianAccountNumber.m
 //  HYPNorwegianAccountNumber
 //
+//  Ref: http://docs.oracle.com/cd/E18727_01/doc.121/e13483/T359831T498954.htm#T498969
+//
 //  Created by Christoffer Winterkvist on 10/9/14.
 //  Copyright (c) 2014 Christoffer Winterkvist. All rights reserved.
 //
