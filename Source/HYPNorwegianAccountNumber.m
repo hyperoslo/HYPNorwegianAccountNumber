@@ -23,6 +23,12 @@
     return @[@5,@4,@3,@2,@7,@6,@5,@4,@3,@2];
 }
 
++ (BOOL)validateWithString:(NSString *)string
+{
+    HYPNorwegianAccountNumber *accountNumber = [[HYPNorwegianAccountNumber alloc] initWithString:string];
+    return accountNumber.isValid;
+}
+
 - (instancetype)initWithString:(NSString *)string
 {
     self = [super init];

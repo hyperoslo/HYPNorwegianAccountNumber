@@ -11,6 +11,7 @@
 @interface HYPNorwegianAccountNumber : NSObject
 
 + (NSArray *)weightNumbers;
++ (BOOL)validateWithString:(NSString *)string;
 - (instancetype)initWithString:(NSString *)string;
 - (BOOL)isValid;
 - (NSString *)controlNumberString;
