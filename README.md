@@ -4,7 +4,8 @@ HYPNorwegianAccountNumber
 Makes validating Norwegian account numbers easy as pie
 
 ``` objc
-HYPNorwegianAccountNumber *accountNumber = [[HYPNorwegianAccountNumber alloc] initWithString:@"xxxxxxxxxxx"];
+HYPNorwegianAccountNumber *accountNumber;
+accountNumber = [[HYPNorwegianAccountNumber alloc] initWithString:@"xxxxxxxxxxx"];
 
 if (accountNumber.isValid) {
     NSLog(@"$$$");
