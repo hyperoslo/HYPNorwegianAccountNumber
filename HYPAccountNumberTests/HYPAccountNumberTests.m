@@ -29,7 +29,8 @@ static NSString * HYPAccountNumberSubject = @"11111111111";
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testControlNumber {
+    XCTAssert(self.accountNumber.controlNumber == 1, @"Control number is one");
 }
 
 @end
