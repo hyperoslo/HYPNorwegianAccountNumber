@@ -16,6 +16,11 @@
 
 @implementation HYPNorwegianAccountNumber
 
++ (NSArray *)weightNumbers
+{
+    return @[@5,@4,@3,@2,@7,@6,@5,@4,@3,@2];
+}
+
 - (instancetype)initWithString:(NSString *)string
 {
 	self = [super init];

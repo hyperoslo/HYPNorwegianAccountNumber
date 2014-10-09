@@ -10,6 +10,7 @@
 
 @interface HYPNorwegianAccountNumber : NSObject
 
++ (NSArray *)weightNumbers;
 - (instancetype)initWithString:(NSString *)string;
 
 @end
