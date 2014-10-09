@@ -6,20 +6,92 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BD192A4819E68B8400CA1FA2 /* HYPAccountNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD192A4719E68B8400CA1FA2 /* HYPAccountNumberTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BD192A4219E68B8400CA1FA2 /* HYPAccountNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYPAccountNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD192A4619E68B8400CA1FA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD192A4719E68B8400CA1FA2 /* HYPAccountNumberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPAccountNumberTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD192A3F19E68B8400CA1FA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		BD192A3719E68B6600CA1FA2 = {
 			isa = PBXGroup;
 			children = (
+				BD192A4419E68B8400CA1FA2 /* HYPAccountNumberTests */,
+				BD192A4319E68B8400CA1FA2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		BD192A4319E68B8400CA1FA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD192A4219E68B8400CA1FA2 /* HYPAccountNumberTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD192A4419E68B8400CA1FA2 /* HYPAccountNumberTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD192A4719E68B8400CA1FA2 /* HYPAccountNumberTests.m */,
+				BD192A4519E68B8400CA1FA2 /* Supporting Files */,
+			);
+			path = HYPAccountNumberTests;
+			sourceTree = "<group>";
+		};
+		BD192A4519E68B8400CA1FA2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD192A4619E68B8400CA1FA2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD192A4119E68B8400CA1FA2 /* HYPAccountNumberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD192A4919E68B8400CA1FA2 /* Build configuration list for PBXNativeTarget "HYPAccountNumberTests" */;
+			buildPhases = (
+				BD192A3E19E68B8400CA1FA2 /* Sources */,
+				BD192A3F19E68B8400CA1FA2 /* Frameworks */,
+				BD192A4019E68B8400CA1FA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HYPAccountNumberTests;
+			productName = HYPAccountNumberTests;
+			productReference = BD192A4219E68B8400CA1FA2 /* HYPAccountNumberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BD192A3819E68B6600CA1FA2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					BD192A4119E68B8400CA1FA2 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
 			};
 			buildConfigurationList = BD192A3B19E68B6600CA1FA2 /* Build configuration list for PBXProject "HYPNorwegianAccountNumber" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -29,12 +101,35 @@
 				en,
 			);
 			mainGroup = BD192A3719E68B6600CA1FA2;
+			productRefGroup = BD192A4319E68B8400CA1FA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				BD192A4119E68B8400CA1FA2 /* HYPAccountNumberTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD192A4019E68B8400CA1FA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD192A3E19E68B8400CA1FA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD192A4819E68B8400CA1FA2 /* HYPAccountNumberTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		BD192A3C19E68B6600CA1FA2 /* Debug */ = {
@@ -49,6 +144,96 @@
 			};
 			name = Release;
 		};
+		BD192A4A19E68B8400CA1FA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = HYPAccountNumberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BD192A4B19E68B8400CA1FA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = HYPAccountNumberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -60,6 +245,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BD192A4919E68B8400CA1FA2 /* Build configuration list for PBXNativeTarget "HYPAccountNumberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD192A4A19E68B8400CA1FA2 /* Debug */,
+				BD192A4B19E68B8400CA1FA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
