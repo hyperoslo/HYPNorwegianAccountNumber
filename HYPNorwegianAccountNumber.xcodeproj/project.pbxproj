@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD192A4819E68B8400CA1FA2 /* HYPAccountNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD192A4719E68B8400CA1FA2 /* HYPAccountNumberTests.m */; };
 		BD192A5C19E6B3AE00CA1FA2 /* HYPNorwegianAccountNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = BD192A5B19E6B3AE00CA1FA2 /* HYPNorwegianAccountNumber.m */; };
+		BD192B1B19E6BE5B00CA1FA2 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = BD192A5E19E6BE5A00CA1FA2 /* .travis.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		BD192A4719E68B8400CA1FA2 /* HYPAccountNumberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPAccountNumberTests.m; sourceTree = "<group>"; };
 		BD192A5A19E6B3AE00CA1FA2 /* HYPNorwegianAccountNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPNorwegianAccountNumber.h; sourceTree = "<group>"; };
 		BD192A5B19E6B3AE00CA1FA2 /* HYPNorwegianAccountNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPNorwegianAccountNumber.m; sourceTree = "<group>"; };
+		BD192A5E19E6BE5A00CA1FA2 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 		BD192A3719E68B6600CA1FA2 = {
 			isa = PBXGroup;
 			children = (
+				BD192A5E19E6BE5A00CA1FA2 /* .travis.yml */,
 				BD192A5919E6B3AE00CA1FA2 /* Source */,
 				BD192A4419E68B8400CA1FA2 /* HYPAccountNumberTests */,
 				BD192A4319E68B8400CA1FA2 /* Products */,
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD192B1B19E6BE5B00CA1FA2 /* .travis.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
