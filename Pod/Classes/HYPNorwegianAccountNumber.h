@@ -12,5 +12,7 @@
 
 + (NSArray *)weightNumbers;
 - (instancetype)initWithString:(NSString *)string;
+- (NSString *)controlNumberString;
+- (NSUInteger)controlNumber;
 
 @end

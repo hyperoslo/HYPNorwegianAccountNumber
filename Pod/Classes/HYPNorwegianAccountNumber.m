@@ -31,4 +31,22 @@
     return self;
 }
 
+- (NSString *)controlNumberString
+{
+    if (self.accountNumber.length != 11) return nil;
+
+	NSString *substring = [self.accountNumber substringFromIndex:10];
+
+    return substring;
+}
+
+- (NSUInteger)controlNumber
+{
+    NSString *controlNumberString = self.controlNumberString;
+
+    if (!controlNumberString) return 0;
+
+	return [self.controlNumberString intValue];
+}
+
 @end
