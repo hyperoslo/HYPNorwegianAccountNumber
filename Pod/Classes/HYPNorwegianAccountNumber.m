@@ -36,6 +36,7 @@
 - (BOOL)isValid
 {
     BOOL valid = NO;
+    if ([self skipValidation]) return YES;
 
     NSUInteger calculateControlNumber = [self calculate:self.accountNumberWithoutControlNumber withWeightNumbers:[HYPNorwegianAccountNumber weightNumbers]];
     calculateControlNumber = 11 - (calculateControlNumber % 11);
@@ -84,6 +85,14 @@
     NSString *substring = [self.accountNumber substringToIndex:10];
 
     return substring;
+}
+
+- (BOOL)skipValidation
+{
+    NSString *subjectA = [self.accountNumber substringWithRange:NSMakeRange(5,1)];
+    NSString *subjectB = [self.accountNumber substringWithRange:NSMakeRange(6,1)];
+
+    return ([subjectA isEqualToString:subjectB] && [subjectA isEqualToString:@"0"]);
 }
 
 @end
