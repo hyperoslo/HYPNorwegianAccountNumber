@@ -4,7 +4,8 @@ HYPNorwegianAccountNumber
 Makes validating Norwegian account numbers easy as pie
 
 ``` objc
-HYPNorwegianAccountNumber *accountNumber = [[HYPNorwegianAccountNumber alloc] initWithString:@"xxxxxxxxxxx"];
+HYPNorwegianAccountNumber *accountNumber;
+accountNumber = [[HYPNorwegianAccountNumber alloc] initWithString:@"xxxxxxxxxxx"];
 
 if (accountNumber.isValid) {
     NSLog(@"$$$");
@@ -27,4 +28,4 @@ and if you're using this library we probably want to hire you.
 
 ## License
 
-HYPNorwegianSSN is available under the MIT license. See the [LICENSE](https://raw.githubusercontent.com/hyperoslo/HYPNorwegianAccountNumber/master/LICENSE.md) file for more info.
+HYPNorwegianAccountNumber is available under the MIT license. See the [LICENSE](https://raw.githubusercontent.com/hyperoslo/HYPNorwegianSSN/develop/LICENSE.md) file for more info.
