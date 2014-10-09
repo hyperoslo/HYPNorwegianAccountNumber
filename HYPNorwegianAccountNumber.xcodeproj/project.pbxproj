@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		BD192A4819E68B8400CA1FA2 /* HYPAccountNumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD192A4719E68B8400CA1FA2 /* HYPAccountNumberTests.m */; };
+		BD192A5319E68BB600CA1FA2 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = BD192A4E19E68BB600CA1FA2 /* .gitkeep */; };
+		BD192A5419E68BB600CA1FA2 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = BD192A5019E68BB600CA1FA2 /* .gitkeep */; };
+		BD192A5519E68BB600CA1FA2 /* HYPNorwegianAccountNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = BD192A5219E68BB600CA1FA2 /* HYPNorwegianAccountNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD192A4219E68B8400CA1FA2 /* HYPAccountNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYPAccountNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD192A4619E68B8400CA1FA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD192A4719E68B8400CA1FA2 /* HYPAccountNumberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYPAccountNumberTests.m; sourceTree = "<group>"; };
+		BD192A4E19E68BB600CA1FA2 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		BD192A5019E68BB600CA1FA2 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		BD192A5119E68BB600CA1FA2 /* HYPNorwegianAccountNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYPNorwegianAccountNumber.h; sourceTree = "<group>"; };
+		BD192A5219E68BB600CA1FA2 /* HYPNorwegianAccountNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYPNorwegianAccountNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +37,7 @@
 		BD192A3719E68B6600CA1FA2 = {
 			isa = PBXGroup;
 			children = (
+				BD192A4C19E68BB600CA1FA2 /* Pod */,
 				BD192A4419E68B8400CA1FA2 /* HYPAccountNumberTests */,
 				BD192A4319E68B8400CA1FA2 /* Products */,
 			);
@@ -58,6 +66,33 @@
 				BD192A4619E68B8400CA1FA2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD192A4C19E68BB600CA1FA2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				BD192A4D19E68BB600CA1FA2 /* Assets */,
+				BD192A4F19E68BB600CA1FA2 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		BD192A4D19E68BB600CA1FA2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				BD192A4E19E68BB600CA1FA2 /* .gitkeep */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		BD192A4F19E68BB600CA1FA2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BD192A5019E68BB600CA1FA2 /* .gitkeep */,
+				BD192A5119E68BB600CA1FA2 /* HYPNorwegianAccountNumber.h */,
+				BD192A5219E68BB600CA1FA2 /* HYPNorwegianAccountNumber.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +150,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD192A5319E68BB600CA1FA2 /* .gitkeep in Resources */,
+				BD192A5419E68BB600CA1FA2 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD192A4819E68B8400CA1FA2 /* HYPAccountNumberTests.m in Sources */,
+				BD192A5519E68BB600CA1FA2 /* HYPNorwegianAccountNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
