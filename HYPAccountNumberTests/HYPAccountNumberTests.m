@@ -33,4 +33,9 @@ static NSString * HYPAccountNumberSubject = @"11111111111";
     XCTAssert(self.accountNumber.controlNumber == 1, @"Control number is one");
 }
 
+- (void)testAuthenticity
+{
+    XCTAssert(self.accountNumber.isValid, @"Account number is valid");
+}
+
 @end
