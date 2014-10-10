@@ -1,5 +1,6 @@
-HYPNorwegianAccountNumber
-=========================
+# HYPNorwegianAccountNumber
+
+[![Build Status](https://travis-ci.org/hyperoslo/HYPNorwegianAccountNumber.svg)](https://travis-ci.org/hyperoslo/HYPNorwegianAccountNumber)
 
 Makes validating Norwegian account numbers easy as pie
 
