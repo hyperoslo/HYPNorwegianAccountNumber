@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "HYPNorwegianAccountNumber"
-  s.version = "1.0"
+  s.version = "1.2"
   s.summary = "Makes validating Norwegian account numbers easy as pie"
   s.description = <<-DESC
                    * Makes validating Norwegian account numbers easy as pie
