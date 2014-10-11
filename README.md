@@ -4,6 +4,16 @@
 
 Makes validating Norwegian account numbers easy as pie
 
+#### Short example:
+
+``` objc
+if ([HYPNorwegianAccountNumber validateWithString:@"xxxxxxxxxxx"]) {
+    NSLog(@"$$$");
+}
+```
+
+#### Long example:
+
 ``` objc
 HYPNorwegianAccountNumber *accountNumber;
 accountNumber = [[HYPNorwegianAccountNumber alloc] initWithString:@"xxxxxxxxxxx"];
@@ -11,7 +21,6 @@ accountNumber = [[HYPNorwegianAccountNumber alloc] initWithString:@"xxxxxxxxxxx"
 if (accountNumber.isValid) {
     NSLog(@"$$$");
 }
-
 ```
 
 ## Contributing
