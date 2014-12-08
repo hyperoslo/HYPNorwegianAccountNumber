@@ -33,11 +33,12 @@ static NSString * HYPAccountNumberSubject = @"11111111111";
 	NSString *lastCharacter = [HYPAccountNumberSubject substringWithRange:NSMakeRange(HYPAccountNumberSubject.length-1, 1)];
     NSUInteger control = (unsigned)[lastCharacter integerValue];
 
-    XCTAssert(self.accountNumber.controlNumber == control, @"Found control number");
+    XCTAssertEqual(self.accountNumber.controlNumber, control);
 }
 
 - (void)testFalseAuthenticity
 {
+    XCTAssertFalse([HYPNorwegianAccountNumber validateWithString:@"11111111111"]);
 }
 
 @end
