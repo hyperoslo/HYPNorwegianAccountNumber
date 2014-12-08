@@ -46,7 +46,7 @@
     if ([self skipValidation]) return YES;
 
     NSUInteger calculateControlNumber = [self calculate:self.accountNumberWithoutControlNumber withWeightNumbers:[HYPNorwegianAccountNumber weightNumbers]];
-    calculateControlNumber = 11 - (calculateControlNumber % 11);
+    calculateControlNumber = [self modulusEleven:calculateControlNumber];
 
     return (calculateControlNumber == self.controlNumber);
 }
@@ -81,6 +81,13 @@
     }
 
     return result;
+}
+
+- (NSUInteger)modulusEleven:(NSUInteger)controlDigit
+{
+    controlDigit = 11 - (controlDigit % 11);
+
+    return (controlDigit == 11) ? 0 : controlDigit;
 }
 
 - (NSString *)accountNumberWithoutControlNumber

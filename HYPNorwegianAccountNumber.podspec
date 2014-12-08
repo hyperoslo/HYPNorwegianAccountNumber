@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "HYPNorwegianAccountNumber"
-  s.version = "1.2"
+  s.version = "1.2.1"
   s.summary = "Makes validating Norwegian account numbers easy as pie"
   s.description = <<-DESC
                    * Makes validating Norwegian account numbers easy as pie
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     :git => 'https://github.com/hyperoslo/HYPNorwegianAccountNumber.git',
     :tag => s.version.to_s
   }
-  s.source_files = 'Source/'
+  s.source_files = 'Source/*.*'
   s.frameworks = 'Foundation'
   s.requires_arc = true
 end
